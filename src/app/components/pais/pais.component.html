@@ -1,0 +1,19 @@
+<button type="button" class="btn btn-primary" (click)="show=!show"> peru/pais </button>
+<table class="table table-dark" *ngIf="show">
+    <thead>
+        <tr>
+            <th scope="col">código</th>
+            <th scope="col">nombre</th>
+            <th scope="col">Poblacion</th>
+            <th scope="col">Continente</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of datapais">
+            <td>{{pais.alpha3Code}}</td>
+            <td>{{pais.name}}</td>
+            <td>{{pais.population}}</td>
+            <td>{{pais.region}}</td>
+        </tr>
+    </tbody>
+</table>

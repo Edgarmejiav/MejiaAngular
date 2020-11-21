@@ -1,0 +1,14 @@
+<h1>Datos </h1>
+
+<h3>Nombre: {{nombre}}</h3>
+<h3>Email: <a href="mailto:{{email}}">{{email}}</a></h3>
+<h3>Dirección: {{direccion}}</h3>
+<h3>Teléfono: {{telefono}}</h3>
+<div class="row p-3">
+    <div *ngFor="let social of socialMedia" class="{{social.icon}} col"><a href="{{social.url}}">{{social.name}} </a></div>
+</div>
+
+<div class="col p-4">
+    <h1>Información</h1>
+    <p>Hola soy Edgar Mejía estudiante de Ing. Sistemas</p>
+</div>
